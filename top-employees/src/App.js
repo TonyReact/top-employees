@@ -140,7 +140,6 @@ const ProjectForm = () => {
     };
 
     if (selectedProjectIndex !== null) {
-      // если выбран проект для редактирования, заменяем его в массиве проектов
       const updatedProjects = [...projects];
       updatedProjects[selectedProjectIndex] = newProject;
       setProjects(updatedProjects);
@@ -148,7 +147,6 @@ const ProjectForm = () => {
       setProjects([...projects, newProject]);
     }
 
-    // очищаем значения полей после добавления/редактирования проекта
     setProjectName("");
     setEmployeeName("");
     setStartDate("");
